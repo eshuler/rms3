@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  evdate: 2012-01-29
+  evhostreg: MyString
+  evname: MyString
+  evtype: MyString
+  evtrack: MyString
+  evchief: MyString
+
+two:
+  evdate: 2012-01-29
+  evhostreg: MyString
+  evname: MyString
+  evtype: MyString
+  evtrack: MyString
+  evchief: MyString
