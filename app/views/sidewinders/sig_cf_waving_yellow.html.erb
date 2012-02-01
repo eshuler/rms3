@@ -1,0 +1,36 @@
+<%= render(:partial => 'header')-%>
+
+<%= render(:partial => 'signalbuttons') -%>
+
+<section id="info">
+
+	<%= render(:partial => 'sig_cf') -%>
+	
+	<!-- place a 9 item table to hold images and text content -->
+	<div id="handsigtable">
+		<table>
+			<tr>
+				<th>Corner Captain</th><th> </th><th>Flagger</th>
+			</tr>
+			<tr>
+				<!-- the first image is the captain -->
+				<td><%= image_tag "handsignals/cawavingyellow.idraw.gif" %></td>
+				<!-- the second image is a spacer -->
+				<td><%= image_tag "handsignals/spacer.idraw.gif" %></td>
+				<!-- the last image is the flagger -->
+				<td><%= image_tag "handsignals/flaggerwavingyellow.idraw.gif"%></td>
+			</tr>
+			<tr>
+				<td>
+					<p>Waving Yellow;</p>
+					<p>Move one arm up and down,<br/>
+					until the flagger responds.</p>
+					</td><td> </td><td><p>Waving Yellow</p></td>
+			</tr>
+		</table><br/>
+
+	</div><!-- handsigtable -->
+	<p class="backbutton"><%= link_to( image_tag("handsignals/signal_back.png"), "sig_captflagger") %></p>
+</section>
+
+<%= render(:partial => 'footer')-%>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="SCCA,Flagging,Communication,Racing,Sports Car Racing,Race Workers,Race Safety,High Plains Raceway">
+		<meta name="description" content="SCCA Flagging and Communications training information">
+		<meta name="generator" content="TextMate http://macromates.com/"/>
+		<meta name="author" content="Ed Shuler"/>
+		<title><%= @title %></title>
+		<%= stylesheet_link_tag(@css) %>
+		<%= javascript_include_tag 'prototype' %>
+		<%= javascript_include_tag 'scriptaculous' %>
+		<%= javascript_include_tag 'opentip' %>
+		<%= javascript_include_tag 'application' %>
+		<%= javascript_include_tag 'duration' %>
+		<%= javascript_include_tag 'lightbox' %>
+		<%#= javascript_include_tag :all, :cache => true %>
+	
+		<!--[if lt IE 9]> 
+			<script type="text/javascript">
+				document.createElement("nav" ); 
+				document.createElement("header" ); 
+				document.createElement("footer" ); 
+				document.createElement("section" ); 
+				document.createElement("aside" ); 
+				document.createElement("article" );
+			</script>
+		<![endif]-->
+		</head>
+		
+	<body>
+		
+		<%= yield %>
+		
+	</body>
+</html>

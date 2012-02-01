@@ -1,0 +1,52 @@
+<section id="commbuttons">
+	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
+	
+	<table id="audiotable">
+		<tr>
+			<td>Alert Call</td>
+			<td>Standing Yellow Call</td>
+		<tr>
+			<td>
+				<audio id="alr" controls="controls" class="audio" preload="auto">
+				<source src='/audio/standingyellowalert.ogg' type="audio/ogg">
+				<source src='/audio/standingyellowalert.mp3' type="audio/mpeg">
+				No browser support for audio!
+				</audio>
+			</td>
+			<td>
+				<audio id="sy" controls="controls" class="audio" preload="auto">
+					<source src='/audio/sy.ogg' type="audio/ogg">
+					<source src='/audio/sy.mp3' type="audio/mpeg">
+					No browser support for audio!
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td>Waving Yellow Call</td>
+			<td>No Flag Call</td>
+		<tr>
+		<tr>
+			<td>
+			<audio id="wy" controls="controls" class="audio" preload="auto">
+				<source src='/audio/wavingyellow.ogg' type="audio/ogg">
+				<source src='/audio/wavingyellow.mp3' type="audio/mpeg">
+				No browser support for audio!
+			</audio>
+			</td>
+			<td>
+				<audio id="nf" controls="controls" class="audio" preload="auto">
+					<source src='/audio/noflag.ogg' type="audio/ogg">
+					<source src='/audio/noflag.mp3' type="audio/mpeg">
+					No browser support for audio!
+				</audio>
+			</td>
+		<tr>
+	</table>
+	
+	<script type="text/javascript">
+		$('alr').addTip('Alert call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('wy').addTip('Waving Yellow Call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('sy').addTip('Standing Yellow Call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+		$('nf').addTip('No Flag Call', { tipJoint: [ 'center', 'bottom' ] , style: 'rounded' });
+	</script>
+</section>

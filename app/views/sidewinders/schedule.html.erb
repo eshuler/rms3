@@ -1,0 +1,45 @@
+<%= render(:partial => 'header') -%>
+
+<%= render(:partial => 'mainlogo') -%>
+
+<section id="info">
+	<!-- create a box to hold the countdown info -->
+	<div id="countdowncontainer">
+		<div id="event"><%= h @next_event.evname %> begins in:</div>
+		<div id="clock1" class="digits"> </div>
+	</div>
+	<script type="text/javascript">
+	  Duration.countdown("clock1",Date.UTC(<%= h @utc_date %>));
+	</script>
+	
+	<!-- create a box to hold the schedule -->
+	<div id="tablebox">
+		<table id="schedtable" >
+			<caption>Schedule of racing events in the RMDiv of the SCCA for 2011</caption>
+			<tr>
+				<th>Date</th><th>Host</th><th>Event Name</th><th>Event Type</th><th>Location</th><th>Flag Chief</th>
+			</tr>
+			<% @events.each do |event| -%>
+				<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+					<td><%= h event.evdate.strftime("%m/%d/%Y 07:00 AM") %></td>
+					<td><%= h event.evhostreg %></td>
+					<td><%= h event.evname %></td>
+					<td><%= h event.evtype %></td>
+					<td><%= h event.evtrack %></td>
+					<td><%= h event.evchief %></td>
+				</tr>
+			<% end %>
+		</table>
+	</div> <!-- tablebox -->
+	<div id="abbreviations">
+		CDR - Continental Divide Region (Colorado Springs area)<br/>
+		COR - Colorado Region (Denver area)<br/>
+		RGR - Rio Grande Region (Albuquerque/Sante Fe area)<br/>
+		Utah - hmmm...where could that be?<br/>
+		EIRSCCA - Eastern Idaho Region (Eastern Idaho, Montana area)<br/>
+		PAR - Pan Am Region (El Paso TX area)<br/>
+		** - Super Tour event!
+	</div>
+</section>
+
+<%= render(:partial => 'footer') -%>
