@@ -9,6 +9,7 @@
 //= require prototype
 //= require scriptaculous
 //= require opentip
+//= require effects
 //= require duration
 //= require lightbox
 //= require_tree .
