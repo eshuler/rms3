@@ -6,4 +6,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require prototype
+//= require scriptaculous
+//= require opentip
+//= require duration
+//= require lightbox
 //= require_tree .
