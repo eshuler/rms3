@@ -1,11 +1,12 @@
-/*********************/
-/* css for rmsweb v3 */
-/*********************/
+/************************************************/
+/* css for Rocky Mountain Sidewinders version 3 */
+/************************************************/
 /* =============== */
 /*    variables    */
 /* =============== */
 $site-font:"Helvetica Light", "MS Trebuchet", sans-serif;
 $bkgnd-solid:#060;
+
 
 * {
 	margin:0px;
@@ -23,12 +24,16 @@ body {
 	border:5px solid orange;
 	border-radius:15px;
 	-moz-border-radius:15px;
+	/*background-image: url('fibre_red.jpg');*/
 	background:$bkgnd-solid;
 }
 
-/***********************************/
-/* rules for the header and footer */
-/***********************************/
+p, li, a, h1{ 
+	line-height:20px;
+	color:orange;
+	text-align:center;
+}
+
 header#page_header p {
 	width:90%;
 	margin-left:auto;
@@ -49,64 +54,44 @@ header#page_header nav ul li, footer#page_footer nav ul li {
 	display:inline;
 }
 
-p, li, a{ 
-	line-height:20px;
-	color:orange;
-	text-align:center;
+section#longsnake {
+	padding:20px 0px 30px 0px;
 }
 
-.drawbox {
-	border:4px solid #F00;
-	padding:4px;
-	text-align:center;
-	font-weight:bold;
-	color:#F00;
-	font-family:"trebuchet ms", verdana, sans-serif;
-}
-
-.linecenter {
-	padding:4px;
-	text-align:center;
-	font-weight:bold;
-	font-size:12pt;
-	color:#000;
-	font-family:"trebuchet ms", verdana, sans-serif;
-}
-
-/******************************/
-/* rules for the flag buttons */
-/******************************/
-section#flagbuttons {
+section#homepage {
 	display:block;
+	height:425px;
+}
+
+section#homepage img.wide1 {
 	margin-top:55px;
+	margin-right:35px;
+	margin-bottom:0px;
+	margin-left:40px;
+	border:none;
 }
 
-section#flagbuttons p{
-	width:80%;
-	height:150px;
-	margin-left:30px;
+section#homepage img.wide2 {
+	margin-top:55px;
+	margin-right:35px;
+	margin-bottom:0px;
+	margin-left:0px;
+	border:none;
 }
 
-section#flagbuttons img{
-	margin-right:5px;
+section#homepage img.wide3 {
+	margin-top:55px;
+	margin-right:25px;
+	margin-bottom:0px;
+	margin-left:0;
+	border:none;
 }
 
-.alt_logo {
-	position:absolute;
-	top:35px;
-	left:850px;
-	float:right;
-}
-
-/******************************/
-/* rules for the info section */
-/******************************/
-section#info {
-	display:block;
+section#aboutpage {
 	overflow:auto;
 	position:relative;
 	width:90%;
-	height:491px;
+	height:490px;
 	color:#000;
 	margin-left:40px;
 	border:2px solid orange;
@@ -116,43 +101,92 @@ section#info {
 	padding:15px;
 }
 
-section#info li {
+section#aboutpage li {
 	margin-left:15px;
 	background:inherit;
-	font-size:8pt;
-	line-height:15px;
 	text-align:left;
 	color:#000;
 }
 
-section#info a {
+section#aboutpage a {
 	color:#000;
-	font-size:10pt;
+	font-size:8pt;
 }
 
-/* ------------------------------------ */
-/* rules for imbeded images in the body */
-/* ------------------------------------ */
-section#info img {
-	padding-right:10px;
+section#nextup p{
+	display:block;
+	width:78%;
+	height:25px;
+	color:#000;
+	font-size:16pt;
+	background:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	margin-bottom:21px;
+	border:2px solid orange;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	padding:15px;
+}
+
+#eventname {
+	position:relative;
+	color:#000;
+	font-size:16pt;
+}
+
+#clock1 {
+	color:#000;
+	margin-top:15px;
+	font-size:16pt;
+}
+
+#weather {
+	margin-top:-5px;
 	float:left;
-	display:inline;
 }
 
+.headline {
+	color:#000;
+	font-size:10pt;
+}
 
-b {
+.drawbox {
+	border:3px solid red;
+	color:#000;
+	text-align:center;
+	font-size:14pt;
+}
+
+.basictext {
+	color:#000;
+	font-size:10pt;
+}
+
+.strongtext {
 	color:#000;
 	font-weight:bold;
 	font-size:10pt;
 }
 
-span {
+.citation {
 	color:#000;
-	font-weight:bold;
-	font-size:10pt;
-	border-bottom:1px dotted black;
+	font-size:8pt;
 }
 
+.linecenter {
+	color:#000;
+	text-align:center;
+	font-size:12pt;
+}
+
+footer#page_footer {
+	clear: both; 
+	width: 100%;
+	display: block;
+	text-align: center;
+}
 
 /*
 ** http://www.opentip.org
@@ -215,7 +249,6 @@ smoothly when it changes position due to browser viewport changes. */
 .ot-loading .opentip .loadingIndication { display: block; }
 
 .ot-loading .opentip .content { display: none; }
-
 
 .ot-buttons {
 	position: absolute;

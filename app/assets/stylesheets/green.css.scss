@@ -55,52 +55,10 @@ p, li, a{
 	text-align:center;
 }
 
-.drawbox {
-	border:4px solid #F00;
-	padding:4px;
-	text-align:center;
-	font-weight:bold;
-	color:#F00;
-	font-family:"trebuchet ms", verdana, sans-serif;
-}
+/*************************/
+/* rules for the section */
+/*************************/
 
-.linecenter {
-	padding:4px;
-	text-align:center;
-	font-weight:bold;
-	font-size:12pt;
-	color:#000;
-	font-family:"trebuchet ms", verdana, sans-serif;
-}
-
-/******************************/
-/* rules for the flag buttons */
-/******************************/
-section#flagbuttons {
-	display:block;
-	margin-top:55px;
-}
-
-section#flagbuttons p{
-	width:80%;
-	height:150px;
-	margin-left:30px;
-}
-
-section#flagbuttons img{
-	margin-right:5px;
-}
-
-.alt_logo {
-	position:absolute;
-	top:35px;
-	left:850px;
-	float:right;
-}
-
-/******************************/
-/* rules for the info section */
-/******************************/
 section#info {
 	display:block;
 	overflow:auto;
@@ -125,20 +83,14 @@ section#info li {
 	color:#000;
 }
 
+section#longsnake {
+	padding:20px 0px 30px 0px;
+}
+
 section#info a {
 	color:#000;
 	font-size:10pt;
 }
-
-/* ------------------------------------ */
-/* rules for imbeded images in the body */
-/* ------------------------------------ */
-section#info img {
-	padding-right:10px;
-	float:left;
-	display:inline;
-}
-
 
 b {
 	color:#000;
@@ -146,13 +98,91 @@ b {
 	font-size:10pt;
 }
 
-span {
+/* ------------------------------------------- */
+/* rules for the countdown container and clock */
+/* ------------------------------------------- */
+#countdowncontainer{
+	height:80px;
 	color:#000;
-	font-weight:bold;
-	font-size:10pt;
-	border-bottom:1px dotted black;
+	background:#FFF;
 }
 
+#event {
+	padding:1px;
+	font-size:20pt;
+	text-align:center;
+	background:#FFF;
+	color:#000;
+}
+
+#clock1{
+	padding:1px;
+	margin-top:5px;
+	font-size:18pt;
+	text-align:center;
+	background:#FFF;
+	color:#000;
+}
+
+.digits{
+	font-size:28pt;
+}
+
+/* -------------------------------- */
+/* rules for the tablebox and table */
+/* -------------------------------- */
+#schedtable {
+	border-collapse:collapse;
+	width:100%;
+}
+
+#schedtable caption {
+	background:#FFF;
+	font-size:14pt;
+	font-style:italic;
+}
+
+#schedtable th {
+	padding:2px;
+	border-top:2px solid #F9BB3A;
+	border-left:1px solid #F9BB3A;
+	border-right:1px solid #F9BB3A;
+	border-bottom:1px solid #F9BB3A;
+	font-size:10pt;
+	background-image: url('../images/greenbar.png');
+	color:#F9BB3A;
+}
+
+#schedtable td {
+	padding:2px;
+	text-align:center;
+	font-size:10pt;
+	border:1px solid black;
+	color:#000;
+}
+
+caption {
+	color:#000;
+}
+
+/* Zebra stripe the table */
+#schedtable  .list-line-even {
+  background:#EEE;
+}
+
+#schedtable .list-line-odd {
+  background:#AAA;
+}
+
+/* ----------------------------------- */
+/* --- Rules for the abbreviations div */
+/* ----------------------------------- */
+#abbreviations {
+	padding-top:10px;
+	background:#FFF;
+	margin-left:20px;
+	color:#000;
+}
 
 /*
 ** http://www.opentip.org
@@ -205,7 +235,7 @@ smoothly when it changes position due to browser viewport changes. */
 .opentip .loadingIndication {
 	display: none;
 	padding: 10px 15px;
-	background: url("loading.gif") center center no-repeat;
+	background: url("../images/loading.gif") center center no-repeat;
 	width: 25px;
 	height: 15px;
 }
@@ -228,7 +258,7 @@ smoothly when it changes position due to browser viewport changes. */
 	text-decoration:none;
 	width: 15px;
 	height: 15px;
-	background: url("button.close.small.ffffff.png") center center no-repeat;
+	background: url("../images/button.close.small.ffffff.png") center center no-repeat;
 }
 
 .ot-buttons .close span {
@@ -247,7 +277,7 @@ smoothly when it changes position due to browser viewport changes. */
 }
 
 .ot-container .stem div {
-	background: no-repeat url("stems.cccccc.png");
+	background: no-repeat url("../images/stems.cccccc.png");
 	position: absolute;
 	width: 320px;
 	height: 160px;
@@ -286,7 +316,7 @@ smoothly when it changes position due to browser viewport changes. */
 }
 
 .style-rounded .stem div {
-	background-image: url("stems.fcb033.png");
+	background-image: url("../images/stems.fcb033.png");
 }
 
 .style-rounded .ot-buttons {

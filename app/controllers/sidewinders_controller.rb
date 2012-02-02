@@ -10,7 +10,7 @@ class SidewindersController < ApplicationController
   ############################
   def index
     @title = 'RMSidewinders v3.0'
-    @css = 'sidewinder.css'
+    @css = 'sidewinders.css'
     @next_event = Event.find_next_event
     @utc_date = Event.next_utc_date
     
@@ -80,17 +80,17 @@ class SidewindersController < ApplicationController
   
   def organize
     @title = 'Event Organization'
-    @css = 'brown.css'
+    @css = 'green.css'
   end
   
   def links
     @title = 'Club Links'
-    @css = 'blue.css'
+    @css = 'green.css'
   end
   
   def advance
     @title = 'Licensing'
-    @css = 'carbon.css'
+    @css = 'green.css'
   end
   
   #################
