@@ -1,12 +1,6 @@
 /*---------------------------------- */
 /* rules for the hand signal buttons */
 /*---------------------------------- */
-/*     SASS Variables                */
-/*---------------------------------- */
-$txt-color:#000;
-$bkgnd-color:#FFF;
-$gif-bkgnd:#03C;
-
 section#sigbuttons {
 	margin:0px;
 	padding:0px;
@@ -33,7 +27,7 @@ img.alt_logo {
 
 #handsigtable {
 	text-align:center;
-	background:$bkgnd-color;
+	background:#FFF;
 }
 
 #handsigtable table {
@@ -41,19 +35,19 @@ img.alt_logo {
 	margin-right:auto;
 	border-style:none;
 	border-collapse:collapse;
-	background:$bkgnd-color;
+	background:#FFF;
 }
 
 #handsigtable th, #handsigtable td p{
 	text-align:center;
-	background:$bkgnd-color;
-	color:$txt-color;
+	background:#FFF;
+	color:#000;
 }
 
 #handsigtable img.outline {
 	text-align:center;
-	background:$bkgnd-color;
-	color:$txt-color;
+	background:#FFF;
+	color:#000;
 }
 
 .buttonbox {
@@ -62,7 +56,7 @@ img.alt_logo {
 	margin-left:70px;
 	height:70px;
 	margin-top:15px;
-	background-color:$gif-bkgnd;
+	background-color:#03C;
 	background-image:none;
 }
 
@@ -73,7 +67,7 @@ img.alt_logo {
 }
 
 .handsigbuttons a:link a:visited {
-	background-color:$gif-bkgnd;
+	background-color:#03C;
 }
 
 .handsigbuttons img {

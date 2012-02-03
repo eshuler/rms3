@@ -5,6 +5,3 @@
  *= require_self
  *= require_tree . 
 */
-@import "sidewinders.css.scss";
-@import "flags.css.scss";
-@import "signals.css.scss";

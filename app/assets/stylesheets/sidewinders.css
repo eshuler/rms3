@@ -1,21 +1,11 @@
 /************************************************/
 /* css for Rocky Mountain Sidewinders version 3 */
 /************************************************/
-/* ==================== */
-/*    sass variables    */
-/* ==================== */
-$site-font:"Helvetica Light", "MS Trebuchet", sans-serif;
-$site-bkgnd:#060;
-$link-bkgnd:#060;
-$link-txt-color:orange;
-$info-bkgnd:#FFF;
-$info-txt-color:#000;
-
 * {
 	margin:0px;
 	padding:0px;
 	color:#FFF;
-	font-family:$site-font;
+	font-family:"Helvetica Light", "MS Trebuchet", sans-serif;
 	font-size:10pt;
 	background:transparent;
 }
@@ -27,12 +17,12 @@ body {
 	border:5px solid orange;
 	border-radius:15px;
 	-moz-border-radius:15px;
-	background:$site-bkgnd;
+	background:#060;
 }
 
 p, li, a, a:link, a:visited, h1{ 
 	line-height:20px;
-	color:$link-txt-color;
+	color:orange;
 	background:none;
 	text-decoration:none;
 	text-align:center;
@@ -100,12 +90,12 @@ section#info {
 	position:relative;
 	width:90%;
 	height:491px;
-	color:$info-txt-color;
+	color:#000;
 	margin-left:40px;
 	border:2px solid orange;
 	border-radius:10px;
 	-moz-border-radius:10px;
-	background:$info-bkgnd;
+	background:#FFF;
 	padding:15px;
 }
 
@@ -115,11 +105,11 @@ section#info li {
 	font-size:8pt;
 	line-height:15px;
 	text-align:left;
-	color:$info-txt-color;
+	color:#000;
 }
 
 section#info a {
-	color:$info-txt-color;
+	color:#000;
 	font-size:10pt;
 }
 
@@ -134,13 +124,13 @@ section#info img {
 
 
 section#info b {
-	color:$info-txt-color;
+	color:#000;
 	font-weight:bold;
 	font-size:10pt;
 }
 
 section#info span.atip {
-	color:$info-txt-color;
+	color:#000;
 	font-weight:bold;
 	font-size:10pt;
 	border-bottom:1px dotted black;
@@ -151,12 +141,12 @@ section#aboutpage {
 	position:relative;
 	width:90%;
 	height:490px;
-	color:$info-txt-color;
+	color:#000;
 	margin-left:40px;
 	border:2px solid orange;
 	border-radius:10px;
 	-moz-border-radius:10px;
-	background:$info-bkgnd;
+	background:#FFF;
 	padding:15px;
 }
 
@@ -164,11 +154,11 @@ section#aboutpage li {
 	margin-left:15px;
 	background:inherit;
 	text-align:left;
-	color:$info-txt-color;
+	color:#000;
 }
 
 section#aboutpage a {
-	color:$info-txt-color;
+	color:#000;
 	font-size:8pt;
 }
 
@@ -176,9 +166,9 @@ section#nextup p{
 	display:block;
 	width:78%;
 	height:25px;
-	color:$info-txt-color;
+	color:#000;
 	font-size:16pt;
-	background:$info-bkgnd;
+	background:#FFF;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:20px;
@@ -191,7 +181,7 @@ section#nextup p{
 
 #eventname, #clock1 {
 	position:relative;
-	color:$info-txt-color;
+	color:#000;
 	font-size:14pt;
 	text-decoration:none;
 }
@@ -204,7 +194,7 @@ section#nextup p{
 }
 
 .headline {
-	color:$info-txt-color;
+	color:#000;
 	font-size:10pt;
 }
 
@@ -214,22 +204,22 @@ section#nextup p{
 	text-align:center;
 	font-weight:bold;
 	color:#F00;
-	font-family:$site-font;
+	font-family:"Helvetica Light", "MS Trebuchet", sans-serif;
 }
 
 .basictext {
-	color:$info-txt-color;
+	color:#000;
 	font-size:10pt;
 }
 
 .strongtext {
-	color:$info-txt-color;
+	color:#000;
 	font-weight:bold;
 	font-size:10pt;
 }
 
 .citation {
-	color:$info-txt-color;
+	color:#000;
 	font-size:8pt;
 }
 
@@ -238,8 +228,8 @@ section#nextup p{
 	text-align:center;
 	font-weight:bold;
 	font-size:12pt;
-	color:$info-txt-color;
-	font-family:$site-font;
+	color:#000;
+	font-family:"Helvetica Light", "MS Trebuchet", sans-serif;
 }
 
 footer#page_footer {
