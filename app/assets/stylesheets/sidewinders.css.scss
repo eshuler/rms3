@@ -6,6 +6,8 @@
 /* =============== */
 $site-font:"Helvetica Light", "MS Trebuchet", sans-serif;
 $bkgnd-solid:#060;
+$text-color:orange;
+$link-bkgnd:#060;
 
 
 * {
@@ -24,13 +26,14 @@ body {
 	border:5px solid orange;
 	border-radius:15px;
 	-moz-border-radius:15px;
-	/*background-image: url('fibre_red.jpg');*/
 	background:$bkgnd-solid;
 }
 
-p, li, a, h1{ 
+p, li, a, a:link, a:visited, h1{ 
 	line-height:20px;
-	color:orange;
+	color:$text-color;
+	background:$link-bkgnd;
+	text-decoration:none;
 	text-align:center;
 }
 
@@ -145,6 +148,7 @@ section#nextup p{
 #weather {
 	margin-top:-5px;
 	float:left;
+	background:#FFF;
 }
 
 .headline {
