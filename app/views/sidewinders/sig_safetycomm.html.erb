@@ -18,16 +18,19 @@
 				<td><%= image_tag "handsignals/safetyman.idraw.gif" %></td>
 			</tr>
 			<tr>
-				<td><p>What do you need?</p></td><td> </td><td>
-					<%= link_to "Send Ambulance", :action => 'sig_sc_ambulance' %><br/>
-					<%= link_to "Send Firetruck", :action => 'sig_sc_fire' %><br/>
-					<%= link_to "Send Flat tow", :action => 'sig_sc_flat_tow' %><br/>
-					<%= link_to "Send Wrecker", :action => 'sig_sc_wrecker' %><br/>
-					<%= link_to "Send Tilt bed", :action => 'sig_sc_tilt_bed' %><br/>
-					<%= link_to "Send Help", :action => 'sig_sc_send_help' %><br/>
-					<%= link_to "Send Lots of help", :action => 'sig_sc_send_lots_of_help' %><br/>
-					<%= link_to "SEND HELP NOW!", :action => 'sig_sc_send_now' %><br/>
-					</td>
+				<td><p class="basictext">What do you need?</p></td><td> </td>
+				<td>
+					<ul>
+					<li><%= link_to "Send Ambulance", :action => 'sig_sc_ambulance' %></li>
+					<li><%= link_to "Send Firetruck", :action => 'sig_sc_fire' %></li>
+					<li><%= link_to "Send Flat tow", :action => 'sig_sc_flat_tow' %></li>
+					<li><%= link_to "Send Wrecker", :action => 'sig_sc_wrecker' %></li>
+					<li><%= link_to "Send Tilt bed", :action => 'sig_sc_tilt_bed' %></li>
+					<li><%= link_to "Send Help", :action => 'sig_sc_send_help' %></li>
+					<li><%= link_to "Send Lots of help", :action => 'sig_sc_send_lots_of_help' %></li>
+					<li><%= link_to "SEND HELP NOW!", :action => 'sig_sc_send_now' %></li>
+					</ul>
+				</td>
 			</tr>
 		</table>
 	</div><!-- handsigtable -->

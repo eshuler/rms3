@@ -21,11 +21,14 @@
 				<td><%= image_tag "handsignals/flaggerman.idraw.gif" %></td>
 			</tr>
 			<tr>
-				<td><%= link_to "Standing Yellow Flag", :action => "sig_cf_standing_yellow" %><br/>
-						<%= link_to "Waving Yellow", :action => "sig_cf_waving_yellow" %><br/>
-						<%= link_to "Double Standing Yellow",:action => "sig_cf_dbl_standing_yellow" %><br/>
-						<%= link_to "Surface Flag", :action => "sig_cf_surface" %><br/>
-						<%= link_to "White", "sig_cf_white" %><br/>
+				<td>
+					<ul>
+						<li><%= link_to "Standing Yellow Flag", :action => "sig_cf_standing_yellow" %></li>
+						<li><%= link_to "Waving Yellow", :action => "sig_cf_waving_yellow" %></li>
+						<li><%= link_to "Double Standing Yellow",:action => "sig_cf_dbl_standing_yellow" %></li>
+						<li><%= link_to "Surface Flag", :action => "sig_cf_surface" %></li>
+						<li><%= link_to "White", "sig_cf_white" %></li>
+						</ul>
 					</td><td> </td><td> </td>
 			</tr>
 		</table><br/>

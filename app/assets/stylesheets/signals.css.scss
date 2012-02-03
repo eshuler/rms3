@@ -1,0 +1,94 @@
+/*---------------------------------- */
+/* rules for the hand signal buttons */
+/*---------------------------------- */
+/*     SASS Variables                */
+/*---------------------------------- */
+$txt-color:#000;
+$bkgnd-color:#FFF;
+$gif-bkgnd:#03C;
+
+section#sigbuttons {
+	margin:0px;
+	padding:0px;
+	display:block;
+}
+
+p.signalbuttons {
+	height:200px;
+	margin-left:50px;
+	float:left;
+}
+
+img.button {
+	margin-top:40px;
+	margin-right:10px;
+}
+
+img.alt_logo {
+	position:absolute;
+	top:35px;
+	left:850px;
+	float:right;
+}
+
+#handsigtable {
+	text-align:center;
+	background:$bkgnd-color;
+}
+
+#handsigtable table {
+	margin-left:auto;
+	margin-right:auto;
+	border-style:none;
+	border-collapse:collapse;
+	background:$bkgnd-color;
+}
+
+#handsigtable th, #handsigtable td p{
+	text-align:center;
+	background:$bkgnd-color;
+	color:$txt-color;
+}
+
+#handsigtable img.outline {
+	text-align:center;
+	background:$bkgnd-color;
+	color:$txt-color;
+}
+
+.buttonbox {
+	display: inline;
+	float:left;
+	margin-left:70px;
+	height:70px;
+	margin-top:15px;
+	background-color:$gif-bkgnd;
+	background-image:none;
+}
+
+.handsigbuttons {
+	display: inline;
+	float: left;
+	margin-right:15px;
+}
+
+.handsigbuttons a:link a:visited {
+	background-color:$gif-bkgnd;
+}
+
+.handsigbuttons img {
+	border:1px solid white;
+}
+
+.backbutton{
+	width:75px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+footer#page_footer { 
+	clear: both; 
+	width: 100%;
+	display: block;
+	text-align: center;
+}
