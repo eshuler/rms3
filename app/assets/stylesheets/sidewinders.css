@@ -24,7 +24,7 @@ p, li, a, a:link, a:visited, h1{
 	line-height:20px;
 	color:orange;
 	background:none;
-	text-decoration:none;
+	text-decoration:dashed;
 	text-align:center;
 }
 
@@ -208,8 +208,9 @@ section#nextup p{
 }
 
 .basictext {
+	text-align:left;
 	color:#000;
-	font-size:10pt;
+	font-size:9pt;
 }
 
 .strongtext {

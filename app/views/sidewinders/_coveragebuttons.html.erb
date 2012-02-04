@@ -1,10 +1,10 @@
-<section id="flagbuttons">
+<section id="sig_buttons">
 	<%= image_tag('alt_logo.png', {:class=>"alt_logo"} ) %>
-	<p>
-		<%= link_to(image_tag('tracks/hpr.png',:border=>0 ), {:action=>'track_hpr'}, {:id=>"hpr"}) %>
-		<%= link_to(image_tag('tracks/ppir.png',:border=>0 ), {:action=>'track_ppir'}, {:id=>"ppir"}) %>
-		<%= link_to(image_tag('tracks/lajunta.png',:border=>0 ), {:action=>'track_lajunta'}, {:id=>"lajr"}) %>
-		<%= link_to(image_tag('tracks/pmp.png',:border=>0 ), {:action=>'track_pmp'}, {:id=>"pmp"}) %>
+	<p class="signalbuttons">
+		<%= link_to(image_tag('tracks/hpr.png',:border=>0, :class=>'button'), {:action=>'track_hpr'}, {:id=>"hpr"}) %>
+		<%= link_to(image_tag('tracks/ppir.png',:border=>0, :class=>'button'), {:action=>'track_ppir'}, {:id=>"ppir"}) %>
+		<%= link_to(image_tag('tracks/lajunta.png',:border=>0, :class=>'button'), {:action=>'track_lajunta'}, {:id=>"lajr"}) %>
+		<%= link_to(image_tag('tracks/pmp.png',:border=>0, :class=>'button'), {:action=>'track_pmp'}, {:id=>"pmp"}) %>
 	</p>
 	
 	<script type="text/javascript">

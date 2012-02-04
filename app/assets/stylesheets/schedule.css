@@ -1,0 +1,84 @@
+/* ------------------------------------------- */
+/* rules for the countdown container and clock */
+/* ------------------------------------------- */
+#countdowncontainer{
+	height:80px;
+	color:#000;
+	background:#FFF;
+}
+
+#event {
+	padding:1px;
+	font-size:20pt;
+	text-align:center;
+	background:#FFF;
+	color:#000;
+}
+
+#clock1{
+	padding:1px;
+	margin-top:5px;
+	font-size:18pt;
+	text-align:center;
+	background:#FFF;
+	color:#000;
+}
+
+.digits{
+	font-size:28pt;
+}
+
+/* -------------------------------- */
+/* rules for the tablebox and table */
+/* -------------------------------- */
+#schedtable {
+	border-collapse:collapse;
+	width:100%;
+}
+
+#schedtable caption {
+	background:#FFF;
+	font-size:14pt;
+	font-style:italic;
+}
+
+#schedtable th {
+	padding:2px;
+	border-top:2px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+	font-size:10pt;
+	color:#000;
+}
+
+#schedtable td {
+	padding:2px;
+	text-align:center;
+	font-size:10pt;
+	border:1px solid black;
+	color:#000;
+}
+
+caption {
+	color:#000;
+}
+
+/* Zebra stripe the table */
+#schedtable  .list-line-even {
+  background:#EEE;
+}
+
+#schedtable .list-line-odd {
+  background:#AAA;
+}
+
+/* ----------------------------------- */
+/* --- Rules for the abbreviations div */
+/* ----------------------------------- */
+#abbreviations {
+	padding-top:10px;
+	background:#FFF;
+	margin-left:20px;
+	color:#000;
+}
