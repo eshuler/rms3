@@ -34,6 +34,15 @@ class SidewindersController < ApplicationController
     else
       @weather_page = "hpr_weather.html"
     end
+    
+    case @next_event.evhostreg
+    when "COR"
+      @host_image = 'cor_logo.png'
+    when "CDR"
+      @host_image = 'cdr_logo.png'
+    else
+      @host_image = 'alt_logo.png'
+    end
   end
   
   ##############################

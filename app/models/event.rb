@@ -20,15 +20,15 @@ class Event < ActiveRecord::Base
     #reformat today for comparison
     ftoday = today.strftime("%Y-%m-%d")
     theevent = find(:first, :order=>"evdate", :conditions => ['"evdate" > ?', ftoday ])
-    
-    y = theevent.evdate.strftime("%Y").to_i
-    m = theevent.evdate.strftime("%m").to_i
-    d = theevent.evdate.strftime("%d").to_i
+    diff = (theevent.evdate - today).to_i
+    # daystogo = diff.to_i
+    # y = theevent.evdate.strftime("%Y").to_i
+    # m = theevent.evdate.strftime("%m").to_i
+    # d = theevent.evdate.strftime("%d").to_i
     
     #construct the utc date format
-    d = y.to_s + "," + (m -1).to_s + "," + d.to_s + ",14,00,00"
-  end
+    # d = y.to_s + "," + (m -1).to_s + "," + d.to_s + ",14,00,00"
     
-
+  end
     
 end

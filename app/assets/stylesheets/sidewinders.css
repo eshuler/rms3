@@ -181,9 +181,17 @@ section#nextup p{
 
 #eventname, #clock1 {
 	position:relative;
-	color:#000;
+	color:#FF9200;
 	font-size:14pt;
+	font-weight:bold;
 	text-decoration:none;
+}
+
+#clublogo {
+	margin-top:-8px;
+	float:left;
+	text-decoration:none;
+	background:none;
 }
 
 #weather a:link {
