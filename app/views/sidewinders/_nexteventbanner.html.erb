@@ -1,0 +1,13 @@
+<section id="nextup">
+	<p>
+		<span id="weather"><a href="<%= @weather_page %>" onclick="window.open(this.href, 'new_window_name','height=230,width=530');return false;">
+		<%= image_tag('sun_therm.png', {:size => "40x40", :border=>0} ) %></a></span>
+		<span id="clublogo"><%= image_tag( @next_event.image, {:size => "40x40", :border=>0}) %> -  
+			<% if @next_event.cash %> <%= image_tag( 'cash.png', {:size => "40x40", :border=>0, :id=>"cash"}) %> -  <% end %>
+			<% if @next_event.food %> <%= image_tag( 'food.png', {:size => "40x40", :border=>0, :id=>"food"}) %> -  <% end %>
+			<% if @next_event.hotel %> <%= image_tag( 'bed.png', {:size => "40x40", :border=>0, :id=>"hotel"}) %> <% end %>
+		</span> 
+		<span id="eventname"><%= h @next_event.evname %></span> <span class="basictext">begins in</span> <span id="eventname"><%= h @utc_date %> days!</span>
+	</p>
+</section>
+

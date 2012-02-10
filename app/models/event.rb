@@ -20,7 +20,10 @@ class Event < ActiveRecord::Base
     #reformat today for comparison
     ftoday = today.strftime("%Y-%m-%d")
     theevent = find(:first, :order=>"evdate", :conditions => ['"evdate" > ?', ftoday ])
-    diff = (theevent.evdate - today).to_i
+    
+    if theevent   # theevent not nil
+      diff = (theevent.evdate - today).to_i
+    end
     # daystogo = diff.to_i
     # y = theevent.evdate.strftime("%Y").to_i
     # m = theevent.evdate.strftime("%m").to_i

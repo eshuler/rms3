@@ -12,7 +12,7 @@ development:
   database: rms3_development
   pool: 5
   username: user1
-  password:
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,12 +24,12 @@ test:
   database: rms3_test
   pool: 5
   username: user1
-  password:
+  password: 
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: rms3_production
+  database: rmsidewi_rms3
   pool: 5
-  username: user1
-  password:
+  username: rmsidewi_user1
+  password: 72gcvcda

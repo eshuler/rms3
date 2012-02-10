@@ -13,35 +13,41 @@ class SidewindersController < ApplicationController
     @css = 'sidewinders.css'
     @next_event = Event.find_next_event
     @utc_date = Event.next_utc_date
+    @next_event_partial
     
-    case @next_event.evtrack
-    when "HPR"
-      @weather_page = "hpr_weather.html" 
-    when "PPIR"
-      @weather_page = "ppir_weather.html" 
-    when "LaJunta"
-      @weather_page = "laj_weather.html" 
-    when "PMP"
-      @weather_page = "pmp_weather.html"
-    when "MPH"
-      @weather_page = "mph_weather.html"
-    when "Sandia"
-      @weather_page = "sandia_weather.html"
-    when "MMP"
-      @weather_page = "mmp_weather.html"
-    when "Road America"
-      @weather_page = "roadamerica_weather.html"
-    else
-      @weather_page = "hpr_weather.html"
-    end
+    if @next_event
+      @next_event_partial = 'nexteventbanner'
+      case @next_event.evtrack
+      when "HPR"
+        @weather_page = "hpr_weather.html" 
+      when "PPIR"
+        @weather_page = "ppir_weather.html" 
+      when "LaJunta"
+        @weather_page = "laj_weather.html" 
+      when "PMP"
+        @weather_page = "pmp_weather.html"
+      when "MPH"
+        @weather_page = "mph_weather.html"
+      when "Sandia"
+        @weather_page = "sandia_weather.html"
+      when "MMP"
+        @weather_page = "mmp_weather.html"
+      when "Road America"
+        @weather_page = "roadamerica_weather.html"
+      else
+        @weather_page = "hpr_weather.html"
+      end
     
-    case @next_event.evhostreg
-    when "COR"
-      @host_image = 'cor_logo.png'
-    when "CDR"
-      @host_image = 'cdr_logo.png'
+      case @next_event.evhostreg
+      when "COR"
+        @host_image = 'cor_logo.png'
+      when "CDR"
+        @host_image = 'cdr_logo.png'
+      else
+        @host_image = 'alt_logo.png'
+      end
     else
-      @host_image = 'alt_logo.png'
+      @next_event_partial = 'noeventbanner'
     end
   end
   
