@@ -8,5 +8,4 @@
 //= require scriptaculous
 //= require opentip
 //= require effects
-//= require lightbox
 //= require_tree .

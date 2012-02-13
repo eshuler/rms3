@@ -180,15 +180,15 @@ section#nextup p{
 }
 
 #eventname, #clock1 {
-	position:relative;
 	color:#FF9200;
 	font-size:14pt;
 	font-weight:bold;
 	text-decoration:none;
 }
 
-#clublogo {
+#clublogo, #food, #hotel, #cash {
 	margin-top:-8px;
+	margin-right:10px;
 	float:left;
 	text-decoration:none;
 	background:none;

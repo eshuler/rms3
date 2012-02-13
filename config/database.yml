@@ -26,10 +26,18 @@ test:
   username: user1
   password: 
 
+# production:
+#  adapter: postgresql
+#  encoding: unicode
+#  database: rmsidewi_rms3
+#  pool: 5
+#  username: rmsidewi_user1
+#  password: 72gcvcda
+
 production:
   adapter: postgresql
   encoding: unicode
-  database: rmsidewi_rms3
+  database: rms3_development
   pool: 5
-  username: rmsidewi_user1
-  password: 72gcvcda
+  username: user1
+  password: 
