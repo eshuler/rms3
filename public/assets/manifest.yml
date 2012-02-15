@@ -201,6 +201,9 @@ rails_logo.png: rails_logo-e4b51606cd77fda2615e7439907bfc92.png
 rms_ad.png: rms_ad-d3798b64db3c90a5a2ba697809537f8d.png
 rms_logo.png: rms_logo-7d536ba7bfe655e79d978db34ad37bdc.png
 rms_longsnake.png: rms_longsnake-976157fcce27a9d4d9bc2ab01434a0d8.png
+rmvr.opacity: rmvr-becd534e25fa48870cb154ddc5ed5a6b.opacity
+rmvr.png: rmvr-cf764eb33fc256992a2f7f0a175656ad.png
+rmvr_logo.png: rmvr_logo-de24a048d9b06bb8c8ac38386e436c76.png
 scca_logo.png: scca_logo-07e8cdc179e9a58baebd1e816ba73af5.png
 snake_left.png: snake_left-396efe1c9d22308fcd4f71e8111ab10b.png
 snake_right.png: snake_right-35ac25a9eb343b3a28c0efb6eb459cc7.png
@@ -226,5 +229,5 @@ tracks/track_hpr.png: tracks/track_hpr-9eb31927fde65ac74c5bee1ccd70494f.png
 tracks/track_lajunta.png: tracks/track_lajunta-aba102832399aab7fe91d023864f2bcc.png
 tracks/track_pmp.png: tracks/track_pmp-0084b6d77eb4b3e0da0e07b884845b98.png
 tracks/track_ppir.png: tracks/track_ppir-9e8d6c37d838344e1882f963a84a5743.png
-application.js: application-c3f5c8481ec8e0324cb704319cf30a32.js
+application.js: application-e4330b02c14d0a521a0f6f104f6bbccc.js
 application.css: application-b7063ae8b337323e25b39c651a3f3af2.css
