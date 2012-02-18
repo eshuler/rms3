@@ -134,9 +134,9 @@ module AuthenticatedSystem
     # havoc with forgery protection, and is only strictly necessary on login.
     # However, **all session state variables should be unset here**.
     def logout_keeping_session!
-      # Kill server-side auth cookie
-      @current_user.forget_me if @current_user.is_a? User
-#      @current_user = false     # not logged in, and don't do it for me
+     # Kill server-side auth cookie
+     # @current_user.forget_me if @current_user.is_a? User
+     # @current_user = false     # not logged in, and don't do it for me
       kill_remember_cookie!     # Kill client-side auth cookie
       session[:user_id] = nil   # keeps the session but kill our variable
       # explicitly kill any other session variables you set

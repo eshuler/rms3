@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120215004621) do
+ActiveRecord::Schema.define(:version => 20120215215227) do
 
   create_table "events", :force => true do |t|
     t.date     "evdate"
@@ -41,5 +41,13 @@ ActiveRecord::Schema.define(:version => 20120215004621) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "workers", :force => true do |t|
+    t.string   "first"
+    t.string   "last"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

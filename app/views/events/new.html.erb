@@ -1,5 +1,12 @@
 <h1>New event</h1>
 
+<% flash.each do |key, msg| %>
+    <%= content_tag :div, msg, :class => [key, " message"], :id => "notice_ #{key}" %>
+    <%= content_tag :script, :type => "text/javascript" do -%>
+        setTimeout("new Effect.Fade('notice_<%= key %>');", 15000);
+    <% end %>
+<% end %>
+
 <%= render 'form' %>
 
 <%= link_to 'Back', events_path %>

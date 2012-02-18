@@ -1,6 +1,7 @@
 Rms3::Application.routes.draw do
   resources :users
-
+  resources :workers
+  resources :events
   resource :session, :only => [:new, :create, :destroy]
 
   match 'signup' => 'users#new', :as => :signup
@@ -12,8 +13,6 @@ Rms3::Application.routes.draw do
   match 'logout' => 'sessions#destroy', :as => :logout
 
   match '/activate/:activation_code' => 'users#activate', :as => :activate, :activation_code => nil
-
-  resources :events
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

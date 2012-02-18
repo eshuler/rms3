@@ -4,6 +4,36 @@ class UsersController < ApplicationController
   
   before_filter :login_required
   
+  def index
+    @users = User.find(:all)
+  end
+  
+  def show
+    @user = User.find(params[:id])
+  end
+  
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    
+    redirect_to(users_url)
+  end
+  
+  def edit
+    @user = User.find(params[:id])
+  end
+  
+  def update
+    @user = User.find(params[:id])
+    
+    if @user.update_attributes(params[:user])
+      flash[:notice] = 'User was successfully updated'
+      redirect_to(user_path(@users))
+    else
+      render :action => 'edit'
+    end
+  end
+  
   # render new.rhtml
   def new
     @user = User.new
@@ -14,7 +44,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     success = @user && @user.save
     if success && @user.errors.empty?
-            # Protects against session fixation attacks, causes request forgery
+      # Protects against session fixation attacks, causes request forgery
       # protection if visitor resubmits an earlier form using back
       # button. Uncomment if you understand the tradeoffs.
       # reset session
